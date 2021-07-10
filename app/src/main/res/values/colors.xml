@@ -9,4 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="colorMain">#5715DA</color>
+
+<!--    Following are the color codes for status bars at intro pages-->
+    <color name="intro1">#0622D9</color>
+    <color name="intro2">#F70A1D</color>
+    <color name="intro3">#14F1DA</color>
+
 </resources>

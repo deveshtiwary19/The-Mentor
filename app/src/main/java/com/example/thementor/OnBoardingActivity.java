@@ -14,6 +14,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.thementor.Adapters.SlidePagerAdapter;
 import com.example.thementor.Fragments.IntroFrag1;
@@ -47,6 +48,16 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         //Restricting the lanscape orientation
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+
+
+        //Following is the code, to make the activity over ride the status bar(Fir the Whole MobileScreen)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                    WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+        }
+
 
 
         viewPager=findViewById(R.id.viewpager_onboarding);

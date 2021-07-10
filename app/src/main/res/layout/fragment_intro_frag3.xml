@@ -2,18 +2,111 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#0000FF"
+    android:background="@drawable/gradient3"
     android:layout_height="match_parent"
     tools:context=".Fragments.IntroFrag3"
     >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="I am Intro Fragment 3"
-        />
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/intro3"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="Lorem De Ipsum"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:text="Lorem De Ipsum Lorem De Ipsum\nLorem De Ipsum Lorem De Ipsum"
+                android:fontFamily="serif"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/loadingtag_unlive"
+                    />
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/loadingtag_unlive"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/loadingtag_live"
+                    />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/white"
+                android:text="Get Started"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                />
+
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
 </RelativeLayout>
 
 

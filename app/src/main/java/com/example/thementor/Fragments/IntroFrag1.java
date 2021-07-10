@@ -1,13 +1,18 @@
 package com.example.thementor.Fragments;
 
+import android.os.Build;
 import android.os.Bundle;
 
+import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 
+import com.example.thementor.MainActivity;
 import com.example.thementor.R;
 
 /**
@@ -48,6 +53,8 @@ public class IntroFrag1 extends Fragment {
         return fragment;
     }
 
+    private View view;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,10 +64,20 @@ public class IntroFrag1 extends Fragment {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_intro_frag1, container, false);
+        view= inflater.inflate(R.layout.fragment_intro_frag1, container, false);
+
+
+
+
+
+
+
+
+        return  view;
     }
 }
