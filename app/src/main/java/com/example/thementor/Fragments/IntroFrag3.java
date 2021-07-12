@@ -1,5 +1,6 @@
 package com.example.thementor.Fragments;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -11,7 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
 
+import com.example.thementor.LoginActivity;
 import com.example.thementor.R;
 
 /**
@@ -53,6 +56,7 @@ public class IntroFrag3 extends Fragment {
     }
 
     private View view;
+    private Button getStarted;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -70,6 +74,16 @@ public class IntroFrag3 extends Fragment {
         // Inflate the layout for this fragment
         view= inflater.inflate(R.layout.fragment_intro_frag3, container, false);
 
+        getStarted=view.findViewById(R.id.getStarted_intro3);
+
+        getStarted.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getContext(), LoginActivity.class);
+                startActivity(i);
+                getActivity().finish();
+            }
+        });
 
 
 
