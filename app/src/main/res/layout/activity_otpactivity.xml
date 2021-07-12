@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/otp_top"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:text="OTP has sucessfully been sent to"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMain"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="+91 XXXXXXXXXX"
+                />
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:textSize="17sp"
+                    android:text="Not the correct number?"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMain"
+                    android:layout_gravity="center"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="4dp"
+                    android:text="Change"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                >
+<!--                Block 1-->
+
+               <androidx.cardview.widget.CardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   app:cardCornerRadius="6dp"
+                   android:elevation="30dp"
+                   android:layout_margin="10dp"
+                   >
+                   <EditText
+                       android:layout_width="45dp"
+                       android:layout_height="45dp"
+                      android:textColor="@color/black"
+                       android:background="@drawable/mobile_edit_text"
+                       />
+               </androidx.cardview.widget.CardView>
+
+                <!--                Block 2-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp"
+                    android:elevation="30dp"
+                    android:layout_margin="10dp"
+                    >
+                    <EditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/mobile_edit_text"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <!--                Block 3-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp"
+                    android:elevation="30dp"
+                    android:layout_margin="10dp"
+                    >
+                    <EditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/mobile_edit_text"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <!--                Block 4-->
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp"
+                    android:elevation="30dp"
+                    android:layout_margin="10dp"
+                    >
+                    <EditText
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:textColor="@color/black"
+                        android:background="@drawable/mobile_edit_text"
+                        />
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/buttons"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:text="Verify OTP"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="11sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginRight="22dp"
+                android:layout_marginLeft="22dp"
+                android:text="You agree to all our terms and conditions registered
+ under the Mentor by logging in to the application."
+                android:layout_marginTop="5dp"
+                />
+
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+</RelativeLayout>
